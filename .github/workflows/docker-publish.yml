@@ -1,3 +1,6 @@
+# Publish Docker Container By GitHub Actions
+# Build, test, and push Docker image to GitHub Packages.
+
 name: Publish Docker Container
 
 on:
@@ -45,7 +48,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'  # Match the Node.js version used in your Dockerfile
+          node-version: '20'  # Use Node.js version 20
 
       - name: Install dependencies
         run: npm install  # Change if using a different package manager
