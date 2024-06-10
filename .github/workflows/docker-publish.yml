@@ -39,8 +39,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/vinodpandhare/Project-ByVP:latest
-            ghcr.io/vinodpandhare/Project-ByVP:${{ github.sha }}
+            ghcr.io/vinodpandhare/Project-byvp:latest
+            ghcr.io/vinodpandhare/Project-byvp:${{ github.sha }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
